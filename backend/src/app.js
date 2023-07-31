@@ -15,8 +15,7 @@ const authRouter = require("./route/authRouter");
 const displayPartRouter = require("./route/displayPartRouter");
 
 app.use(helmet({ 
-  crossOriginResourcePolicy: { policy: "same-site" },
-  crossOriginOpenerPolicy: { policy: "same-origin-allow-popups" }
+  crossOriginResourcePolicy: { policy: "cross-origin" }
 }));
 
 app.use(cors());
